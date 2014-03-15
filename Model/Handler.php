@@ -3,7 +3,6 @@ App::uses('AppModel', 'Model');
 /**
  * Handler Model
  *
- * @property WpUser $WpUser
  * @property TeamPair $TeamPair
  * @property Team $Team
  * @property Award $Award
@@ -29,21 +28,6 @@ class Handler extends AppModel {
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
-
-/**
- * belongsTo associations
- *
- * @var array
- */
-	public $belongsTo = array(
-		'WpUser' => array(
-			'className' => 'WpUser',
-			'foreignKey' => 'wp_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
-	);
 
 /**
  * hasMany associations

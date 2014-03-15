@@ -14,8 +14,8 @@ class HandlerTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.handler',
-		'app.wp_user',
 		'app.team_pair',
+		'app.dog',
 		'app.team',
 		'app.award',
 		'app.game',
@@ -23,14 +23,13 @@ class HandlerTest extends CakeTestCase {
 		'app.activities_game',
 		'app.run',
 		'app.round',
-		'app.division',
-		'app.activities_run',
-		'app.level',
 		'app.event',
 		'app.tour',
 		'app.events_game',
+		'app.division',
+		'app.activities_run',
+		'app.level',
 		'app.award_condition',
-		'app.dog',
 		'app.awards_dog',
 		'app.awards_handler',
 		'app.awards_team_pair'
