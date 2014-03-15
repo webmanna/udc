@@ -1,0 +1,55 @@
+---+ up your league
+
+   * Tours
+RelationshipshasMany eventsFieldsidnameMethods
+   * Events
+RelationshipsbelongTo tourshasMany eventGamesFieldsidtour_idnamedescriptiondateMethodsregisterGames
+   * Games
+RelationshipshasMany eventGameshasMany gameActivitieshasMany achievementshasMany roundsFieldsidnameexpiredMethods
+   * Divisions
+relationshipsbelongsTo gameshasMany roundsfieldsidgame_idnamemethods
+   * Event Games
+RelationshipsbelongsTo eventsbelongsTo Gamesunique rowsFieldsidevent_idgame_idMethodsaddGameToEventaddEventToGame
+   * Rounds
+RelationshipsbelongsTo divisionshasmany runsFieldsidnamedivision_idMethods
+   * Runs
+RelationshipsbelongsTo RoundshasMany runactivitiesFieldsidround_idteam_pair_idpointspoints_totalpoints_scoredpoints_bonuspoints_faultsthrows_totalthrows_scoredthrows_bonusthrows_faultsthrows_missedthrows_droppedis_officialcreatedmodifiedMethodsscoreRunconfirmScore
+   * Activities
+      * Relationships
+belongTo gameshasMany run_activitieshasMany game_activities      * Fields
+         * id
+         * game_id
+         * name
+         * point_value
+         * point_factor
+         * is_bonus
+      * Methods
+
+   * GameActivities
+      * Relationships
+belongsTo gamesbelongsTo activities      * Fields
+         * id
+         * game_id
+         * activity_id
+      * Methods
+addActivityToGameaddGameToActivity
+   * RunActivities
+Relationshipsbelongsto runsbelongsto acitivitiesFieldsidrun_idactivity_idparent_activity_iddeletedcreatedmodifiedMethodsaddActionaddBonus
+   * Levels
+RelationshipsbelongsTo gameshasMany achievementsFieldsidnamegame_idMethods
+   * Achievements
+RelationshipsbelongsTo levelshasMany AchievementConditionshasMany dogAchievementshasMany handlerAchievementshasMany team_pair_achievementsFieldsidnamegame_idMethods
+   * Achievement Conditions
+RelationshipsbelongsTo achievementFieldsidachievement_idnametest_modeltest_conditionsMethods
+   * Handlers
+RelationshipsFieldsidnameMethods
+   * HandlerAchievements
+relationshipsbelongsTo handlerbelongsTo achievementsfieldsidaward_idhandler_idofficialdeletedcreatedmodifiedmethods
+   * Dogs
+RelationshipsFieldsidnameMethods
+   * DogAchievements
+relationshipsbelongsTo dogsbelongsTo achievementsfieldsiddog_idachievement_idofficialdeletedcreatedmodifiedmethods
+   * Team Pairs
+hasMany runsRelationshipsFieldsidnameeloMethods
+   * TeamPairAchievements
+relationshipsbelongsTo team_pairsbelongsTo achievementsfieldsidachievement_idteam_pair_idofficialdeletedcreatedmodifiedmethods
