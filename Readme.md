@@ -2,9 +2,9 @@
 ## A flexible framework designed to add awards to game IRL
 
 *Database Models / Progress*
-* Tours
-* Events
-* Games
+* ~~Tours~~
+* ~~Events~~
+* ~~Games~~
 * Divisions
 * Event Games
 * Rounds
