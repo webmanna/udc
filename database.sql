@@ -211,10 +211,8 @@ CREATE TABLE IF NOT EXISTS `games` (
 -- Dumping structure for table udcdb.handlers
 CREATE TABLE IF NOT EXISTS `handlers` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `wp_user_id` varchar(50) DEFAULT NULL,
   `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `wp_user_id` (`wp_user_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
@@ -315,7 +313,7 @@ CREATE TABLE IF NOT EXISTS `team_pairs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `handler_id` int(11) NOT NULL,
   `dog_id` int(11) NOT NULL,
-  `rating` int(11) DEFAULT NULL,
+  `rating` int(11) NOT NULL DEFAULT '2048',
   PRIMARY KEY (`id`),
   KEY `handler_id` (`handler_id`),
   KEY `dog_id` (`dog_id`)
