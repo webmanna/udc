@@ -18,6 +18,6 @@
 * ~~Handlers~~
 * ~~AwardsAchievements~~
 * ~~Dogs~~
-* DogAchievements
+* ~~AwardsDogs~~
 * Team Pairs
 * TeamPairAchievements
