@@ -19,5 +19,5 @@
 * ~~AwardsAchievements~~
 * ~~Dogs~~
 * ~~AwardsDogs~~
-* Team Pairs
+* ~~Team Pairs~~
 * TeamPairAchievements
