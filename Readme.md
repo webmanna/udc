@@ -5,7 +5,7 @@
 * ~~Tours~~
 * ~~Events~~
 * ~~Games~~
-* Divisions
+* ~~Divisions~~
 * Event Games
 * Rounds
 * Runs
