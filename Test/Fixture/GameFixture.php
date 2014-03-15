@@ -13,10 +13,10 @@ class GameFixture extends CakeTestFixture {
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'key' => 'primary'),
 		'name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'event_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'is_expired' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'key' => 'index'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'event_id' => array('column' => 'event_id', 'unique' => 0)
+			'is_expired' => array('column' => 'is_expired', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
@@ -30,7 +30,7 @@ class GameFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'name' => 'Lorem ipsum dolor sit amet',
-			'event_id' => 1
+			'is_expired' => 1
 		),
 	);
 
