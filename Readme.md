@@ -9,7 +9,7 @@
 * ~~Event Games~~
 * ~~Rounds~~
 * ~~Runs~~
-* Activities
+* ~~Activities~~
 * GameActivities
 * RunActivities
 * Levels
