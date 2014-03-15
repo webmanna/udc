@@ -15,7 +15,14 @@ class DivisionTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.division',
 		'app.game',
-		'app.event'
+		'app.activity',
+		'app.activities_game',
+		'app.award',
+		'app.level',
+		'app.event',
+		'app.tour',
+		'app.events_game',
+		'app.round'
 	);
 
 /**
