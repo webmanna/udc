@@ -19,7 +19,7 @@ USE `udcdb`;
 CREATE TABLE IF NOT EXISTS `activities` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `game_id` int(11) NOT NULL,
-  `name` varchar(50) DEFAULT '0',
+  `name` varchar(50) NOT NULL,
   `point_value` int(11) DEFAULT NULL,
   `point_factor` float(5,2) DEFAULT NULL,
   `is_bonus` tinyint(1) DEFAULT '0',
@@ -235,11 +235,15 @@ CREATE TABLE IF NOT EXISTS `levels` (
 -- Dumping structure for table udcdb.rounds
 CREATE TABLE IF NOT EXISTS `rounds` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `event_id` int(11) NOT NULL,
+  `game_id` int(11) NOT NULL,
   `division_id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
+  KEY `event_id` (`event_id`),
+  KEY `game_id` (`game_id`),
   KEY `division_id` (`division_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

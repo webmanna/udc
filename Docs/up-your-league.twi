@@ -144,7 +144,7 @@
          * game_id
       * Methods
 
-   * Achievements
+   * Awards
       * Relationships
          * belongsTo levels
          * hasMany AchievementConditions
@@ -157,7 +157,7 @@
          * game_id
       * Methods
 
-   * Achievement Conditions
+   * Award Conditions
       * Relationships
          * belongsTo achievement
       * Fields

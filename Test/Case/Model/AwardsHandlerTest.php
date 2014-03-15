@@ -1,11 +1,11 @@
 <?php
-App::uses('Dog', 'Model');
+App::uses('AwardsHandler', 'Model');
 
 /**
- * Dog Test Case
+ * AwardsHandler Test Case
  *
  */
-class DogTest extends CakeTestCase {
+class AwardsHandlerTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,9 +13,7 @@ class DogTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.dog',
-		'app.team_pair',
-		'app.team',
+		'app.awards_handler',
 		'app.award',
 		'app.game',
 		'app.activity',
@@ -23,16 +21,18 @@ class DogTest extends CakeTestCase {
 		'app.run',
 		'app.round',
 		'app.division',
+		'app.team_pair',
 		'app.activities_run',
 		'app.level',
 		'app.event',
 		'app.tour',
 		'app.events_game',
 		'app.award_condition',
+		'app.dog',
 		'app.awards_dog',
 		'app.handler',
 		'app.wp_user',
-		'app.awards_handler',
+		'app.team',
 		'app.awards_team_pair'
 	);
 
@@ -43,7 +43,7 @@ class DogTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Dog = ClassRegistry::init('Dog');
+		$this->AwardsHandler = ClassRegistry::init('AwardsHandler');
 	}
 
 /**
@@ -52,7 +52,7 @@ class DogTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Dog);
+		unset($this->AwardsHandler);
 
 		parent::tearDown();
 	}

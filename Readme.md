@@ -8,16 +8,16 @@
 * ~~Divisions~~
 * ~~Event Games~~
 * ~~Rounds~~
-* Runs
-* Activities
-* GameActivities
-* RunActivities
-* Levels
-* Achievements
-* Achievement Conditions
-* Handlers
-* HandlerAchievements
-* Dogs
-* DogAchievements
-* Team Pairs
-* TeamPairAchievements
+* ~~Runs~~
+* ~~Activities~~
+* ~~GameActivities~~
+* ~~RunActivities~~
+* ~~Levels~~
+* ~~Awards~~
+* ~~Award Conditions~~
+* ~~Handlers~~
+* ~~AwardsAchievements~~
+* ~~Dogs~~
+* ~~AwardsDogs~~
+* ~~Team Pairs~~
+* ~~AwardsTeamPairs~~
