@@ -12,8 +12,8 @@
 * ~~Activities~~
 * ~~GameActivities~~
 * ~~RunActivities~~
-* Levels
-* Achievements
+* ~~Levels~~
+* ~~Awards~~
 * Achievement Conditions
 * Handlers
 * HandlerAchievements
