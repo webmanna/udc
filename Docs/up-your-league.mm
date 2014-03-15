@@ -1,10 +1,10 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node COLOR="#000000" CREATED="1392905749608" ID="ID_1693624649" MODIFIED="1394843353523" TEXT="up your league">
+<node COLOR="#000000" CREATED="1392905749608" ID="ID_1693624649" MODIFIED="1394845628394" TEXT="up your league">
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties"/>
 <hook NAME="accessories/plugins/CreationModificationPlugin_new.properties"/>
-<node COLOR="#0033ff" CREATED="1392905797478" ID="ID_1411698052" MODIFIED="1394843680453" POSITION="right" TEXT="Tours">
+<node COLOR="#0033ff" CREATED="1392905797478" FOLDED="true" ID="ID_1411698052" MODIFIED="1394845628352" POSITION="right" TEXT="Tours">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -25,14 +25,14 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291789986" ID="ID_894606513" MODIFIED="1394843680458" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291789986" FOLDED="true" ID="ID_894606513" MODIFIED="1394845628349" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392958021541" ID="ID_247868201" MODIFIED="1393292299561" TEXT="hasMany events">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291793673" ID="ID_1016574208" MODIFIED="1394843680460" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291793673" FOLDED="true" ID="ID_1016574208" MODIFIED="1394845628351" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1479252592" MODIFIED="1393292331744" TEXT="id">
@@ -47,7 +47,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905800814" ID="ID_318379227" MODIFIED="1394843680462" POSITION="right" TEXT="Events">
+<node COLOR="#0033ff" CREATED="1392905800814" FOLDED="true" ID="ID_318379227" MODIFIED="1394845628357" POSITION="right" TEXT="Events">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -71,7 +71,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_1327545292" MODIFIED="1394843680465" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_1327545292" MODIFIED="1394845628353" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392958031405" ID="ID_999583505" MODIFIED="1393292299592" TEXT="belongTo tours">
@@ -81,7 +81,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_625208842" MODIFIED="1394843680467" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_625208842" MODIFIED="1394845628355" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_608035354" MODIFIED="1393292331744" TEXT="id">
@@ -100,7 +100,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291855949" ID="ID_1654117260" MODIFIED="1394843680469" TEXT="Methods">
+<node COLOR="#00b439" CREATED="1393291855949" FOLDED="true" ID="ID_1654117260" MODIFIED="1394845628356" TEXT="Methods">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393293124426" ID="ID_384424164" MODIFIED="1393293134943" TEXT="registerGames">
@@ -108,7 +108,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905802445" ID="ID_866226645" MODIFIED="1394843680470" POSITION="right" TEXT="Games">
+<node COLOR="#0033ff" CREATED="1392905802445" FOLDED="true" ID="ID_866226645" MODIFIED="1394845628359" POSITION="right" TEXT="Games">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -129,7 +129,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_944122002" MODIFIED="1394843680474" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_944122002" MODIFIED="1394845628358" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392960667531" ID="ID_67879238" MODIFIED="1393292299608" TEXT="hasMany eventGames">
@@ -145,7 +145,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1472208698" MODIFIED="1394843680477" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_1472208698" MODIFIED="1394845628359" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292030466" ID="ID_1671291687" MODIFIED="1393292299608" TEXT="id">
@@ -163,23 +163,26 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1393617583119" ID="ID_59997131" MODIFIED="1394843680480" POSITION="right" TEXT="Divisions">
+<node COLOR="#0033ff" CREATED="1393617583119" FOLDED="true" ID="ID_59997131" MODIFIED="1394846504380" POSITION="right" TEXT="Divisions">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
-    <p>
-      Some games have levels of competition where competitors are grouped together.
-    </p>
-    <p>
-      For example, Fragility has divisions that determine how high the jumps are set.
-    </p>
+    <ul>
+      <li>
+        Some games have levels of competition where competitors are grouped together.
+      </li>
+      <li>
+        For example, Fragility has divisions that determine how high the jumps are set.
+      </li>
+    </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393617587909" ID="ID_447016352" MODIFIED="1394843680483" TEXT="relationships">
+<node COLOR="#00b439" CREATED="1393617587909" ID="ID_447016352" MODIFIED="1394846392331" TEXT="relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393617595000" ID="ID_836339849" MODIFIED="1393617598499" TEXT="belongsTo games">
@@ -189,7 +192,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393617591023" ID="ID_1835342412" MODIFIED="1394843680486" TEXT="fields">
+<node COLOR="#00b439" CREATED="1393617591023" ID="ID_1835342412" MODIFIED="1394846391203" TEXT="fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393617606533" ID="ID_1975260225" MODIFIED="1393617607638" TEXT="id">
@@ -207,10 +210,26 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392960614634" ID="ID_513225665" MODIFIED="1394843680488" POSITION="right" TEXT="Event Games">
+<node COLOR="#0033ff" CREATED="1392960614634" FOLDED="true" ID="ID_513225665" MODIFIED="1394846513021" POSITION="right" TEXT="Event Games">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        Event Games is a bridge table that's used to pair specific games to events.
+      </li>
+      <li>
+        Not all events will feature all games, and some games are limited time only.
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_1711619189" MODIFIED="1394843680491" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_1711619189" MODIFIED="1394845628363" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392960625377" ID="ID_1544691282" MODIFIED="1393292299623" TEXT="belongsTo events">
@@ -223,7 +242,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_452485999" MODIFIED="1394843680494" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_452485999" MODIFIED="1394845628363" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1777615357" MODIFIED="1393292331744" TEXT="id">
@@ -236,7 +255,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393292010429" ID="ID_1143462075" MODIFIED="1394843680496" TEXT="Methods">
+<node COLOR="#00b439" CREATED="1393292010429" FOLDED="true" ID="ID_1143462075" MODIFIED="1394845628366" TEXT="Methods">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393293174479" ID="ID_418848884" MODIFIED="1393293177289" TEXT="addGameToEvent">
@@ -247,7 +266,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905809036" ID="ID_596629658" MODIFIED="1394843680498" POSITION="right" TEXT="Rounds">
+<node COLOR="#0033ff" CREATED="1392905809036" ID="ID_596629658" MODIFIED="1394846524994" POSITION="right" TEXT="Rounds">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -268,7 +287,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_201070923" MODIFIED="1394843680499" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_201070923" MODIFIED="1394845628367" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393618511459" ID="ID_851756719" MODIFIED="1393618516404" TEXT="belongsTo divisions">
@@ -278,7 +297,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1476118387" MODIFIED="1394843680501" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_1476118387" MODIFIED="1394845628367" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_567610001" MODIFIED="1393292331744" TEXT="id">
@@ -296,7 +315,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905804069" ID="ID_1163394409" MODIFIED="1394843680503" POSITION="right" TEXT="Runs">
+<node COLOR="#0033ff" CREATED="1392905804069" FOLDED="true" ID="ID_1163394409" MODIFIED="1394845628371" POSITION="right" TEXT="Runs">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -335,7 +354,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_932617232" MODIFIED="1394843680506" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_932617232" MODIFIED="1394845628369" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392962152232" ID="ID_1961983973" MODIFIED="1393292299639" TEXT="belongsTo Rounds">
@@ -345,7 +364,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_235779778" MODIFIED="1394843680512" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_235779778" MODIFIED="1394845628370" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_220678325" MODIFIED="1393292331744" TEXT="id">
@@ -400,7 +419,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291899660" ID="ID_1007943681" MODIFIED="1394843680517" TEXT="Methods">
+<node COLOR="#00b439" CREATED="1393291899660" FOLDED="true" ID="ID_1007943681" MODIFIED="1394845628371" TEXT="Methods">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292704380" ID="ID_437106589" MODIFIED="1393292706051" TEXT="scoreRun">
@@ -411,7 +430,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905812614" ID="ID_1329840678" MODIFIED="1394339482373" POSITION="right" TEXT="Activities">
+<node COLOR="#0033ff" CREATED="1392905812614" FOLDED="true" ID="ID_1329840678" MODIFIED="1394845628375" POSITION="right" TEXT="Activities">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -441,7 +460,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_1999950806" MODIFIED="1394843680519" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_1999950806" MODIFIED="1394845628373" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392962063125" ID="ID_533558611" MODIFIED="1393292299654" TEXT="belongTo games">
@@ -454,7 +473,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1921730433" MODIFIED="1394339483169" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_1921730433" MODIFIED="1394845628374" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1537462938" MODIFIED="1393292331744" TEXT="id">
@@ -494,10 +513,10 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1393292074528" ID="ID_139664405" MODIFIED="1394339486052" POSITION="right" TEXT="GameActivities">
+<node COLOR="#0033ff" CREATED="1393292074528" FOLDED="true" ID="ID_139664405" MODIFIED="1394845628379" POSITION="right" TEXT="GameActivities">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393293489557" ID="ID_1516294317" MODIFIED="1394843680521" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393293489557" FOLDED="true" ID="ID_1516294317" MODIFIED="1394845628377" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393293501148" ID="ID_1706761668" MODIFIED="1393293510862" TEXT="belongsTo games">
@@ -507,7 +526,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393293492199" ID="ID_1154370468" MODIFIED="1394339487258" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393293492199" FOLDED="true" ID="ID_1154370468" MODIFIED="1394845628378" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393293519578" ID="ID_1389996407" MODIFIED="1393293522477" TEXT="id">
@@ -520,7 +539,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393293493986" ID="ID_1735022148" MODIFIED="1394843680522" TEXT="Methods">
+<node COLOR="#00b439" CREATED="1393293493986" FOLDED="true" ID="ID_1735022148" MODIFIED="1394845628378" TEXT="Methods">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393293548164" ID="ID_1724697391" MODIFIED="1393293553778" TEXT="addActivityToGame">
@@ -531,10 +550,10 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392961800444" ID="ID_1032056625" MODIFIED="1394843680524" POSITION="right" TEXT="RunActivities">
+<node COLOR="#0033ff" CREATED="1392961800444" FOLDED="true" ID="ID_1032056625" MODIFIED="1394845645284" POSITION="right" TEXT="RunActivities">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_1882506580" MODIFIED="1394843680526" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_1882506580" MODIFIED="1394845628379" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392961847066" ID="ID_964674742" MODIFIED="1393292299654" TEXT="belongsto runs">
@@ -544,7 +563,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1077198988" MODIFIED="1394843680528" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1077198988" MODIFIED="1394845642453" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1241385446" MODIFIED="1393292331744" TEXT="id">
@@ -582,7 +601,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291963597" ID="ID_153312870" MODIFIED="1394843680531" TEXT="Methods">
+<node COLOR="#00b439" CREATED="1393291963597" FOLDED="true" ID="ID_153312870" MODIFIED="1394845628380" TEXT="Methods">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393293854614" ID="ID_515461147" MODIFIED="1393293865945" TEXT="addAction">
@@ -593,7 +612,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392959335054" ID="ID_569958137" MODIFIED="1394843680533" POSITION="right" TEXT="Levels">
+<node COLOR="#0033ff" CREATED="1392959335054" FOLDED="true" ID="ID_569958137" MODIFIED="1394845628382" POSITION="right" TEXT="Levels">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -609,7 +628,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_1237500139" MODIFIED="1394843680534" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_1237500139" MODIFIED="1394845628382" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393295170229" ID="ID_895481032" MODIFIED="1393295188572" TEXT="belongsTo games">
@@ -619,7 +638,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_940106943" MODIFIED="1394843680536" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_940106943" MODIFIED="1394845628382" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_474620435" MODIFIED="1393292331744" TEXT="id">
@@ -637,7 +656,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905816131" ID="ID_539463446" MODIFIED="1394843680537" POSITION="right" TEXT="Achievements">
+<node COLOR="#0033ff" CREATED="1392905816131" FOLDED="true" ID="ID_539463446" MODIFIED="1394845628384" POSITION="right" TEXT="Achievements">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -658,7 +677,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_761628645" MODIFIED="1394843680540" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_761628645" MODIFIED="1394845628383" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392962312916" ID="ID_1053571692" MODIFIED="1393295220951" TEXT="belongsTo levels">
@@ -677,7 +696,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1095268960" MODIFIED="1394843680542" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_1095268960" MODIFIED="1394845628384" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1323006865" MODIFIED="1393292331744" TEXT="id">
@@ -695,7 +714,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392907368390" ID="ID_331546116" MODIFIED="1394843680544" POSITION="right" TEXT="Achievement Conditions">
+<node COLOR="#0033ff" CREATED="1392907368390" FOLDED="true" ID="ID_331546116" MODIFIED="1394845628386" POSITION="right" TEXT="Achievement Conditions">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -714,14 +733,14 @@
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="messagebox_warning"/>
-<node COLOR="#00b439" CREATED="1393291803244" ID="ID_1574828477" MODIFIED="1394843680545" TEXT="Relationships">
+<node COLOR="#00b439" CREATED="1393291803244" FOLDED="true" ID="ID_1574828477" MODIFIED="1394845628385" TEXT="Relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392961982823" ID="ID_1992308040" MODIFIED="1393292299670" TEXT="belongsTo achievement">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_351790595" MODIFIED="1394843680547" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_351790595" MODIFIED="1394845628385" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_827417559" MODIFIED="1393292331744" TEXT="id">
@@ -745,7 +764,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905824206" ID="ID_1153167635" MODIFIED="1394843680549" POSITION="right" TEXT="Handlers">
+<node COLOR="#0033ff" CREATED="1392905824206" FOLDED="true" ID="ID_1153167635" MODIFIED="1394845637149" POSITION="right" TEXT="Handlers">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <arrowlink DESTINATION="ID_1752514485" ENDARROW="Default" ENDINCLINATION="56;0;" ID="Arrow_ID_872741250" STARTARROW="None" STARTINCLINATION="56;0;"/>
 <font NAME="SansSerif" SIZE="18"/>
@@ -753,7 +772,7 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1557622807" MODIFIED="1394843680551" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_1557622807" MODIFIED="1394845628386" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1719532375" MODIFIED="1393292331744" TEXT="id">
@@ -768,10 +787,10 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1393294976365" ID="ID_1406465798" MODIFIED="1394843680552" POSITION="right" TEXT="HandlerAchievements">
+<node COLOR="#0033ff" CREATED="1393294976365" FOLDED="true" ID="ID_1406465798" MODIFIED="1394845628388" POSITION="right" TEXT="HandlerAchievements">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393294966236" ID="ID_1758224329" MODIFIED="1394843680554" TEXT="relationships">
+<node COLOR="#00b439" CREATED="1393294966236" FOLDED="true" ID="ID_1758224329" MODIFIED="1394845628387" TEXT="relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393295009965" ID="ID_1455531782" MODIFIED="1393295014744" TEXT="belongsTo handler">
@@ -781,7 +800,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393294970188" ID="ID_813136082" MODIFIED="1394843680557" TEXT="fields">
+<node COLOR="#00b439" CREATED="1393294970188" FOLDED="true" ID="ID_813136082" MODIFIED="1394845628388" TEXT="fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393295484433" ID="ID_551648654" MODIFIED="1393295485333" TEXT="id">
@@ -811,7 +830,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392905826700" ID="ID_485544257" MODIFIED="1394843680559" POSITION="right" TEXT="Dogs">
+<node COLOR="#0033ff" CREATED="1392905826700" FOLDED="true" ID="ID_485544257" MODIFIED="1394845628389" POSITION="right" TEXT="Dogs">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <arrowlink DESTINATION="ID_1752514485" ENDARROW="Default" ENDINCLINATION="58;0;" ID="Arrow_ID_110552295" STARTARROW="None" STARTINCLINATION="58;0;"/>
 <font NAME="SansSerif" SIZE="18"/>
@@ -819,7 +838,7 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_1733041361" MODIFIED="1394843680560" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_1733041361" MODIFIED="1394845628389" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_1638342339" MODIFIED="1393292331744" TEXT="id">
@@ -834,10 +853,10 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1393294954591" ID="ID_928492131" MODIFIED="1394843680562" POSITION="right" TEXT="DogAchievements">
+<node COLOR="#0033ff" CREATED="1393294954591" FOLDED="true" ID="ID_928492131" MODIFIED="1394845628391" POSITION="right" TEXT="DogAchievements">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393294966236" ID="ID_1723106072" MODIFIED="1394843680563" TEXT="relationships">
+<node COLOR="#00b439" CREATED="1393294966236" FOLDED="true" ID="ID_1723106072" MODIFIED="1394845628390" TEXT="relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393294994725" ID="ID_1749206017" MODIFIED="1393295002474" TEXT="belongsTo dogs">
@@ -847,7 +866,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393294970188" ID="ID_713509910" MODIFIED="1394843680566" TEXT="fields">
+<node COLOR="#00b439" CREATED="1393294970188" FOLDED="true" ID="ID_713509910" MODIFIED="1394845628390" TEXT="fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393295495992" ID="ID_165368022" MODIFIED="1393295496949" TEXT="id">
@@ -877,7 +896,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392906081017" ID="ID_1752514485" MODIFIED="1394843680569" POSITION="right" TEXT="Team Pairs">
+<node COLOR="#0033ff" CREATED="1392906081017" FOLDED="true" ID="ID_1752514485" MODIFIED="1394845628392" POSITION="right" TEXT="Team Pairs">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -906,7 +925,7 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1393291807089" ID="ID_893116764" MODIFIED="1394843680572" TEXT="Fields">
+<node COLOR="#00b439" CREATED="1393291807089" FOLDED="true" ID="ID_893116764" MODIFIED="1394845628391" TEXT="Fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393292330182" ID="ID_105881963" MODIFIED="1393292331744" TEXT="id">
@@ -924,10 +943,10 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1393294985974" ID="ID_665248972" MODIFIED="1394843680573" POSITION="right" TEXT="TeamPairAchievements">
+<node COLOR="#0033ff" CREATED="1393294985974" FOLDED="true" ID="ID_665248972" MODIFIED="1394845628393" POSITION="right" TEXT="TeamPairAchievements">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1393294966236" ID="ID_1552986049" MODIFIED="1394843680575" TEXT="relationships">
+<node COLOR="#00b439" CREATED="1393294966236" FOLDED="true" ID="ID_1552986049" MODIFIED="1394845628392" TEXT="relationships">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393295016529" ID="ID_238906513" MODIFIED="1393295025647" TEXT="belongsTo team_pairs">
@@ -937,7 +956,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1393294970188" ID="ID_1436090149" MODIFIED="1394843680577" TEXT="fields">
+<node COLOR="#00b439" CREATED="1393294970188" FOLDED="true" ID="ID_1436090149" MODIFIED="1394845628393" TEXT="fields">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1393295457700" ID="ID_518322849" MODIFIED="1393295459139" TEXT="id">
