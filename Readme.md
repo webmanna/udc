@@ -6,7 +6,7 @@
 * ~~Events~~
 * ~~Games~~
 * ~~Divisions~~
-* Event Games
+* ~~Event Games~~
 * Rounds
 * Runs
 * Activities
