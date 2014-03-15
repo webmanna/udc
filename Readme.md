@@ -10,8 +10,8 @@
 * ~~Rounds~~
 * ~~Runs~~
 * ~~Activities~~
-* GameActivities
-* RunActivities
+* ~~GameActivities~~
+* ~~RunActivities~~
 * Levels
 * Achievements
 * Achievement Conditions
