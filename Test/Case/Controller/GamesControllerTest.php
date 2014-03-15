@@ -14,49 +14,14 @@ class GamesControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.game',
+		'app.activity',
+		'app.activities_game',
+		'app.award',
+		'app.division',
+		'app.level',
 		'app.event',
 		'app.tour',
-		'app.division'
+		'app.events_game'
 	);
-
-/**
- * testIndex method
- *
- * @return void
- */
-	public function testIndex() {
-	}
-
-/**
- * testView method
- *
- * @return void
- */
-	public function testView() {
-	}
-
-/**
- * testAdd method
- *
- * @return void
- */
-	public function testAdd() {
-	}
-
-/**
- * testEdit method
- *
- * @return void
- */
-	public function testEdit() {
-	}
-
-/**
- * testDelete method
- *
- * @return void
- */
-	public function testDelete() {
-	}
 
 }
