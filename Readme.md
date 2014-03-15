@@ -15,7 +15,7 @@
 * ~~Levels~~
 * ~~Awards~~
 * ~~Award Conditions~~
-* Handlers
+* ~~Handlers~~
 * HandlerAchievements
 * Dogs
 * DogAchievements
