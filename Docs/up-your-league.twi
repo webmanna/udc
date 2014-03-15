@@ -1,22 +1,103 @@
 ---+ up your league
 
    * Tours
-RelationshipshasMany eventsFieldsidnameMethods
+      * Relationships
+         * hasMany events
+      * Fields
+         * id
+         * name
+      * Methods
+
    * Events
-RelationshipsbelongTo tourshasMany eventGamesFieldsidtour_idnamedescriptiondateMethodsregisterGames
+      * Relationships
+         * belongTo tours
+         * hasMany eventGames
+      * Fields
+         * id
+         * tour_id
+         * name
+         * description
+         * date
+      * Methods
+         * registerGames
+
    * Games
-RelationshipshasMany eventGameshasMany gameActivitieshasMany achievementshasMany roundsFieldsidnameexpiredMethods
+      * Relationships
+         * hasMany eventGames
+         * hasMany gameActivities
+         * hasMany achievements
+         * hasMany rounds
+      * Fields
+         * id
+         * name
+         * expired
+      * Methods
+
    * Divisions
-relationshipsbelongsTo gameshasMany roundsfieldsidgame_idnamemethods
+      * relationships
+         * belongsTo games
+         * hasMany rounds
+      * fields
+         * id
+         * game_id
+         * name
+      * methods
+
    * Event Games
-RelationshipsbelongsTo eventsbelongsTo Gamesunique rowsFieldsidevent_idgame_idMethodsaddGameToEventaddEventToGame
+      * Relationships
+         * belongsTo events
+         * belongsTo Games
+         * unique rows
+      * Fields
+         * id
+         * event_id
+         * game_id
+      * Methods
+         * addGameToEvent
+         * addEventToGame
+
    * Rounds
-RelationshipsbelongsTo divisionshasmany runsFieldsidnamedivision_idMethods
+      * Relationships
+         * belongsTo divisions
+         * hasmany runs
+      * Fields
+         * id
+         * name
+         * division_id
+      * Methods
+
    * Runs
-RelationshipsbelongsTo RoundshasMany runactivitiesFieldsidround_idteam_pair_idpointspoints_totalpoints_scoredpoints_bonuspoints_faultsthrows_totalthrows_scoredthrows_bonusthrows_faultsthrows_missedthrows_droppedis_officialcreatedmodifiedMethodsscoreRunconfirmScore
+      * Relationships
+         * belongsTo Rounds
+         * hasMany runactivities
+      * Fields
+         * id
+         * round_id
+         * team_pair_id
+         * points
+         * points_total
+         * points_scored
+         * points_bonus
+         * points_faults
+         * throws_total
+         * throws_scored
+         * throws_bonus
+         * throws_faults
+         * throws_missed
+         * throws_dropped
+         * is_official
+         * created
+         * modified
+      * Methods
+         * scoreRun
+         * confirmScore
+
    * Activities
       * Relationships
-belongTo gameshasMany run_activitieshasMany game_activities      * Fields
+         * belongTo games
+         * hasMany run_activities
+         * hasMany game_activities
+      * Fields
          * id
          * game_id
          * name
@@ -27,29 +108,127 @@ belongTo gameshasMany run_activitieshasMany game_activities      * Fields
 
    * GameActivities
       * Relationships
-belongsTo gamesbelongsTo activities      * Fields
+         * belongsTo games
+         * belongsTo activities
+      * Fields
          * id
          * game_id
          * activity_id
       * Methods
-addActivityToGameaddGameToActivity
+         * addActivityToGame
+         * addGameToActivity
+
    * RunActivities
-Relationshipsbelongsto runsbelongsto acitivitiesFieldsidrun_idactivity_idparent_activity_iddeletedcreatedmodifiedMethodsaddActionaddBonus
+      * Relationships
+         * belongsto runs
+         * belongsto acitivities
+      * Fields
+         * id
+         * run_id
+         * activity_id
+         * parent_activity_id
+         * deleted
+         * created
+         * modified
+      * Methods
+         * addAction
+         * addBonus
+
    * Levels
-RelationshipsbelongsTo gameshasMany achievementsFieldsidnamegame_idMethods
+      * Relationships
+         * belongsTo games
+         * hasMany achievements
+      * Fields
+         * id
+         * name
+         * game_id
+      * Methods
+
    * Achievements
-RelationshipsbelongsTo levelshasMany AchievementConditionshasMany dogAchievementshasMany handlerAchievementshasMany team_pair_achievementsFieldsidnamegame_idMethods
+      * Relationships
+         * belongsTo levels
+         * hasMany AchievementConditions
+         * hasMany dogAchievements
+         * hasMany handlerAchievements
+         * hasMany team_pair_achievements
+      * Fields
+         * id
+         * name
+         * game_id
+      * Methods
+
    * Achievement Conditions
-RelationshipsbelongsTo achievementFieldsidachievement_idnametest_modeltest_conditionsMethods
+      * Relationships
+         * belongsTo achievement
+      * Fields
+         * id
+         * achievement_id
+         * name
+         * test_model
+         * test_conditions
+      * Methods
+
    * Handlers
-RelationshipsFieldsidnameMethods
+      * Relationships
+      * Fields
+         * id
+         * name
+      * Methods
+
    * HandlerAchievements
-relationshipsbelongsTo handlerbelongsTo achievementsfieldsidaward_idhandler_idofficialdeletedcreatedmodifiedmethods
+      * relationships
+         * belongsTo handler
+         * belongsTo achievements
+      * fields
+         * id
+         * award_id
+         * handler_id
+         * official
+         * deleted
+         * created
+         * modified
+      * methods
+
    * Dogs
-RelationshipsFieldsidnameMethods
+      * Relationships
+      * Fields
+         * id
+         * name
+      * Methods
+
    * DogAchievements
-relationshipsbelongsTo dogsbelongsTo achievementsfieldsiddog_idachievement_idofficialdeletedcreatedmodifiedmethods
+      * relationships
+         * belongsTo dogs
+         * belongsTo achievements
+      * fields
+         * id
+         * dog_id
+         * achievement_id
+         * official
+         * deleted
+         * created
+         * modified
+      * methods
+
    * Team Pairs
-hasMany runsRelationshipsFieldsidnameeloMethods
+      * hasMany runs
+      * Relationships
+      * Fields
+         * id
+         * name
+         * elo
+      * Methods
+
    * TeamPairAchievements
-relationshipsbelongsTo team_pairsbelongsTo achievementsfieldsidachievement_idteam_pair_idofficialdeletedcreatedmodifiedmethods
+      * relationships
+         * belongsTo team_pairs
+         * belongsTo achievements
+      * fields
+         * id
+         * achievement_id
+         * team_pair_id
+         * official
+         * deleted
+         * created
+         * modified
+      * methods
