@@ -131,10 +131,10 @@ CREATE TABLE IF NOT EXISTS `awards_team_pairs` (
 -- Dumping structure for table udcdb.award_conditions
 CREATE TABLE IF NOT EXISTS `award_conditions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `award_id` int(11) DEFAULT NULL,
-  `name` int(11) DEFAULT NULL,
-  `test_model` int(11) DEFAULT NULL,
-  `test_conditions` int(11) DEFAULT NULL,
+  `award_id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `test_model` varchar(50) NOT NULL,
+  `test_conditions` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `achievement_id` (`award_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
