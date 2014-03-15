@@ -20,4 +20,4 @@
 * ~~Dogs~~
 * ~~AwardsDogs~~
 * ~~Team Pairs~~
-* TeamPairAchievements
+* ~~AwardsTeamPairs~~
