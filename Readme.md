@@ -1,5 +1,5 @@
 # Up Your League
-## A flexible framework designed to add awards to game IRL
+### Flexible framework designed to add awards to IRL games
 
 *Database Models / Progress*
 * ~~Tours~~
