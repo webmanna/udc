@@ -19,7 +19,7 @@ USE `udcdb`;
 CREATE TABLE IF NOT EXISTS `activities` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `game_id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL DEFAULT '0',
+  `name` varchar(50) NOT NULL,
   `point_value` int(11) DEFAULT NULL,
   `point_factor` float(5,2) DEFAULT NULL,
   `is_bonus` tinyint(1) DEFAULT '0',
