@@ -14,16 +14,26 @@ class RoundTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.round',
-		'app.division',
+		'app.event',
+		'app.tour',
 		'app.game',
 		'app.activity',
 		'app.activities_game',
+		'app.run',
+		'app.team_pair',
+		'app.handler',
+		'app.wp_user',
+		'app.team',
 		'app.award',
+		'app.award_condition',
+		'app.dog',
+		'app.awards_dog',
+		'app.awards_handler',
+		'app.awards_team_pair',
+		'app.activities_run',
+		'app.division',
 		'app.level',
-		'app.event',
-		'app.tour',
-		'app.events_game',
-		'app.run'
+		'app.events_game'
 	);
 
 /**
