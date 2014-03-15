@@ -14,7 +14,7 @@
 * ~~RunActivities~~
 * ~~Levels~~
 * ~~Awards~~
-* Achievement Conditions
+* ~~Award Conditions~~
 * Handlers
 * HandlerAchievements
 * Dogs
