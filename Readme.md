@@ -17,7 +17,7 @@
 * ~~Award Conditions~~
 * ~~Handlers~~
 * ~~AwardsAchievements~~
-* Dogs
+* ~~Dogs~~
 * DogAchievements
 * Team Pairs
 * TeamPairAchievements

@@ -13,10 +13,10 @@ class DogFixture extends CakeTestFixture {
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 		'name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'dob' => array('type' => 'date', 'null' => true, 'default' => null),
-		'breed' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'sex' => array('type' => 'boolean', 'null' => true, 'default' => null),
-		'color' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 10, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'dob' => array('type' => 'date', 'null' => false, 'default' => null),
+		'breed' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'sex' => array('type' => 'boolean', 'null' => false, 'default' => null),
+		'color' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 10, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -32,7 +32,7 @@ class DogFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'name' => 'Lorem ipsum dolor sit amet',
-			'dob' => '2014-01-15',
+			'dob' => '2014-03-14',
 			'breed' => 'Lorem ipsum dolor sit amet',
 			'sex' => 1,
 			'color' => 'Lorem ip'
