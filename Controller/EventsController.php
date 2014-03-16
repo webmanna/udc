@@ -13,13 +13,6 @@ class EventsController extends AppController {
  * @var mixed
  */
 	public $scaffold = 'admin';
-        
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Paginator');
 
 /**
  * index method
