@@ -15,8 +15,8 @@ CREATE DATABASE IF NOT EXISTS `udcdb` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `udcdb`;
 
 
--- Dumping structure for table udcdb.activities
-CREATE TABLE IF NOT EXISTS `activities` (
+-- Dumping structure for table udcdb.actions
+CREATE TABLE IF NOT EXISTS `actions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `game_id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -31,32 +31,32 @@ CREATE TABLE IF NOT EXISTS `activities` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table udcdb.activities_games
-CREATE TABLE IF NOT EXISTS `activities_games` (
+-- Dumping structure for table udcdb.actions_games
+CREATE TABLE IF NOT EXISTS `actions_games` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `activity_id` int(11) NOT NULL,
+  `action_id` int(11) NOT NULL,
   `game_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `activity_id` (`activity_id`),
+  KEY `action_id` (`action_id`),
   KEY `game_id` (`game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
 
 
--- Dumping structure for table udcdb.activities_runs
-CREATE TABLE IF NOT EXISTS `activities_runs` (
+-- Dumping structure for table udcdb.actions_runs
+CREATE TABLE IF NOT EXISTS `actions_runs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `run_id` int(11) NOT NULL,
-  `activity_id` int(11) NOT NULL,
-  `parent_activity_id` int(11) DEFAULT NULL,
+  `action_id` int(11) NOT NULL,
+  `parent_action_id` int(11) DEFAULT NULL,
   `deleted` tinyint(1) NOT NULL DEFAULT '0',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `activity_id` (`activity_id`),
+  KEY `action_id` (`action_id`),
   KEY `run_id` (`run_id`),
-  KEY `parent_activity_id` (`parent_activity_id`)
+  KEY `parent_action_id` (`parent_action_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
@@ -248,8 +248,8 @@ CREATE TABLE IF NOT EXISTS `rounds` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table udcdb.round_activities
-CREATE TABLE IF NOT EXISTS `round_activities` (
+-- Dumping structure for table udcdb.round_actions
+CREATE TABLE IF NOT EXISTS `round_actions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)

@@ -1,13 +1,13 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Activity Model
+ * ActionsRun Model
  *
- * @property Game $Game
- * @property Game $Game
  * @property Run $Run
+ * @property Action $Action
+ * @property ParentAction $ParentAction
  */
-class Activity extends AppModel {
+class ActionsRun extends AppModel {
 
 /**
  * Validation rules
@@ -15,7 +15,7 @@ class Activity extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'game_id' => array(
+		'run_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -25,9 +25,19 @@ class Activity extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+		'action_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'deleted' => array(
+			'boolean' => array(
+				'rule' => array('boolean'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -45,47 +55,26 @@ class Activity extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Game' => array(
-			'className' => 'Game',
-			'foreignKey' => 'game_id',
+		'Run' => array(
+			'className' => 'Run',
+			'foreignKey' => 'run_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Action' => array(
+			'className' => 'Action',
+			'foreignKey' => 'action_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'ParentAction' => array(
+			'className' => 'ParentAction',
+			'foreignKey' => 'parent_action_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		)
 	);
-
-/**
- * hasAndBelongsToMany associations
- *
- * @var array
- */
-	public $hasAndBelongsToMany = array(
-		'Game' => array(
-			'className' => 'Game',
-			'joinTable' => 'activities_games',
-			'foreignKey' => 'activity_id',
-			'associationForeignKey' => 'game_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-		),
-		'Run' => array(
-			'className' => 'Run',
-			'joinTable' => 'activities_runs',
-			'foreignKey' => 'activity_id',
-			'associationForeignKey' => 'run_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-		)
-	);
-
 }

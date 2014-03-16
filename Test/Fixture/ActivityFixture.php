@@ -1,9 +1,9 @@
 <?php
 /**
- * ActivityFixture
+ * ActionFixture
  *
  */
-class ActivityFixture extends CakeTestFixture {
+class ActionFixture extends CakeTestFixture {
 
 /**
  * Fields

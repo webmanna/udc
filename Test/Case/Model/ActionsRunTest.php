@@ -1,11 +1,11 @@
 <?php
-App::uses('ActivitiesRun', 'Model');
+App::uses('ActionsRun', 'Model');
 
 /**
- * ActivitiesRun Test Case
+ * ActionsRun Test Case
  *
  */
-class ActivitiesRunTest extends CakeTestCase {
+class ActionsRunTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,20 +13,20 @@ class ActivitiesRunTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.activities_run',
+		'app.actions_run',
 		'app.run',
 		'app.round',
 		'app.division',
 		'app.game',
-		'app.activity',
-		'app.activities_game',
+		'app.action',
+		'app.actions_game',
 		'app.award',
 		'app.level',
 		'app.event',
 		'app.tour',
 		'app.events_game',
 		'app.team_pair',
-		'app.parent_activity'
+		'app.parent_action'
 	);
 
 /**
@@ -36,7 +36,7 @@ class ActivitiesRunTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->ActivitiesRun = ClassRegistry::init('ActivitiesRun');
+		$this->ActionsRun = ClassRegistry::init('ActionsRun');
 	}
 
 /**
@@ -45,7 +45,7 @@ class ActivitiesRunTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->ActivitiesRun);
+		unset($this->ActionsRun);
 
 		parent::tearDown();
 	}

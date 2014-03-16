@@ -17,15 +17,15 @@ class RunTest extends CakeTestCase {
 		'app.round',
 		'app.division',
 		'app.game',
-		'app.activity',
-		'app.activities_game',
+		'app.action',
+		'app.actions_game',
 		'app.award',
 		'app.level',
 		'app.event',
 		'app.tour',
 		'app.events_game',
 		'app.team_pair',
-		'app.activities_run'
+		'app.actions_run'
 	);
 
 /**

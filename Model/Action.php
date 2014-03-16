@@ -1,12 +1,13 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * ActivitiesGame Model
+ * Action Model
  *
- * @property Activity $Activity
  * @property Game $Game
+ * @property Game $Game
+ * @property Run $Run
  */
-class ActivitiesGame extends AppModel {
+class Action extends AppModel {
 
 /**
  * Validation rules
@@ -14,7 +15,7 @@ class ActivitiesGame extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'activity_id' => array(
+		'game_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -24,9 +25,9 @@ class ActivitiesGame extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'game_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+		'name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -44,13 +45,6 @@ class ActivitiesGame extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Activity' => array(
-			'className' => 'Activity',
-			'foreignKey' => 'activity_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
 		'Game' => array(
 			'className' => 'Game',
 			'foreignKey' => 'game_id',
@@ -59,4 +53,39 @@ class ActivitiesGame extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Game' => array(
+			'className' => 'Game',
+			'joinTable' => 'actions_games',
+			'foreignKey' => 'action_id',
+			'associationForeignKey' => 'game_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		'Run' => array(
+			'className' => 'Run',
+			'joinTable' => 'actions_runs',
+			'foreignKey' => 'action_id',
+			'associationForeignKey' => 'run_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
+
 }

@@ -3,11 +3,11 @@ App::uses('AppModel', 'Model');
 /**
  * Game Model
  *
- * @property Activity $Activity
+ * @property Action $Action
  * @property Award $Award
  * @property Division $Division
  * @property Level $Level
- * @property Activity $Activity
+ * @property Action $Action
  * @property Event $Event
  */
 class Game extends AppModel {
@@ -55,8 +55,8 @@ class Game extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Activity' => array(
-			'className' => 'Activity',
+		'Action' => array(
+			'className' => 'Action',
 			'foreignKey' => 'game_id',
 			'dependent' => false,
 			'conditions' => '',
@@ -116,11 +116,11 @@ class Game extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Activity' => array(
-			'className' => 'Activity',
-			'joinTable' => 'activities_games',
+		'Action' => array(
+			'className' => 'Action',
+			'joinTable' => 'actions_games',
 			'foreignKey' => 'game_id',
-			'associationForeignKey' => 'activity_id',
+			'associationForeignKey' => 'action_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
