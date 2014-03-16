@@ -26,11 +26,21 @@
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
  */
-	CakePlugin::routes();
+	CakePlugin::routes();        
 
 /**
  * Routes for REST API
- */  
+ */       
+    Router::connect(
+        "/api/:controller",
+        array("ext" => "json")
+       );      
+    Router::connect(
+        "/api/:controller/view/:id",
+        array("ext" => "json"),
+        array("id" => "[0-9]+")
+       );     
+    
     Router::resourceMap(array(
         array('action' => 'index',  'method' => 'GET',      'id' => false),
         array('action' => 'view',   'method' => 'GET',      'id' => true),
