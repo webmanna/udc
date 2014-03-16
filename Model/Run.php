@@ -5,7 +5,7 @@ App::uses('AppModel', 'Model');
  *
  * @property Round $Round
  * @property TeamPair $TeamPair
- * @property Activity $Activity
+ * @property Action $Action
  */
 class Run extends AppModel {
 
@@ -67,11 +67,11 @@ class Run extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Activity' => array(
-			'className' => 'Activity',
-			'joinTable' => 'activities_runs',
+		'Action' => array(
+			'className' => 'Action',
+			'joinTable' => 'actions_runs',
 			'foreignKey' => 'run_id',
-			'associationForeignKey' => 'activity_id',
+			'associationForeignKey' => 'action_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

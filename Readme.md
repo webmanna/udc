@@ -20,9 +20,9 @@
 * ~~Event Games~~
 * ~~Rounds~~
 * ~~Runs~~
-* ~~Activities~~
-* ~~GameActivities~~
-* ~~RunActivities~~
+* ~~Actions~~
+* ~~GameActions~~
+* ~~RunActions~~
 * ~~Levels~~
 * ~~Awards~~
 * ~~Award Conditions~~

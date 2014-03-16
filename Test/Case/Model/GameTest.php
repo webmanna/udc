@@ -14,8 +14,8 @@ class GameTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.game',
-		'app.activity',
-		'app.activities_game',
+		'app.action',
+		'app.actions_game',
 		'app.award',
 		'app.division',
 		'app.level',

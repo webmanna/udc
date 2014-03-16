@@ -1,13 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * ActivitiesRun Model
+ * ActionsGame Model
  *
- * @property Run $Run
- * @property Activity $Activity
- * @property ParentActivity $ParentActivity
+ * @property Action $Action
+ * @property Game $Game
  */
-class ActivitiesRun extends AppModel {
+class ActionsGame extends AppModel {
 
 /**
  * Validation rules
@@ -15,7 +14,7 @@ class ActivitiesRun extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'run_id' => array(
+		'action_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -25,19 +24,9 @@ class ActivitiesRun extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'activity_id' => array(
+		'game_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'deleted' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -55,23 +44,16 @@ class ActivitiesRun extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Run' => array(
-			'className' => 'Run',
-			'foreignKey' => 'run_id',
+		'Action' => array(
+			'className' => 'Action',
+			'foreignKey' => 'action_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'Activity' => array(
-			'className' => 'Activity',
-			'foreignKey' => 'activity_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ParentActivity' => array(
-			'className' => 'ParentActivity',
-			'foreignKey' => 'parent_activity_id',
+		'Game' => array(
+			'className' => 'Game',
+			'foreignKey' => 'game_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

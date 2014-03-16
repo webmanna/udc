@@ -1,10 +1,10 @@
 <?php
 App::uses('AppController', 'Controller');
 /**
- * Activities Controller
+ * Actions Controller
  *
  */
-class ActivitiesController extends AppController {
+class ActionsController extends AppController {
 
 /**
  * Scaffold
