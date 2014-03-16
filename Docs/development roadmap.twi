@@ -23,6 +23,7 @@
          * action input for runs
          * award searches per action
          * award searches per round
+         * build tests for json controllers
       * Visual Layers
          * Admin
          * Public
