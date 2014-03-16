@@ -116,7 +116,10 @@ p {
 /** containers **/
 div.form,
 div.index,
-div.view {
+div.view,
+div.actions.form, 
+div.actions.index, 
+div.actions.view {
 	float:right;
 	width:76%;
 	border-left:1px solid #666;
