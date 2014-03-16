@@ -38,4 +38,21 @@ class GamesController extends AppController {
 		$this->set('Game', $this->Game->find('first', $options));
                 $this->set('_serialize', array( 'Game' ) );
 	}
+
+ /**
+ * list_actions method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return array
+ */
+        public function list_actions($id) {
+                if (!$this->Game->exists($id)) {
+                         throw new NotFoundException(__('Invalid Game'));
+		}
+                $this->Game->findById($id);
+                debug($this->Game); die;
+                $this->set('Actions', $this->Game->Action->find('all'));
+                $this->set('_serialize', array( 'Actions' ) );
+        }
 }
