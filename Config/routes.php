@@ -29,6 +29,25 @@
 	CakePlugin::routes();
 
 /**
+ * Routes for REST API
+ */
+        
+$routerMapingResources = array(
+    'awards','divisions','dogs','events','games','handlers','levels','rounds','runs','team_pairs','tours'    
+);
+foreach($routerMapingResources as $resourceToMap) {
+    Router::mapResources( $resourceToMap );
+            // array( 'prefix' => 'api' ) 
+}
+  
+
+/**
+ * Parse JSON Views when using .json extension
+ */    
+    Router::parseExtensions( 'json' );
+        
+        
+/**
  * Load the CakePHP default routes. Only remove this if you do not want to use
  * the built-in default routes.
  */
