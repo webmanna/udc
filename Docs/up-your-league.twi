@@ -24,7 +24,7 @@
    * Games
       * Relationships
          * hasMany eventGames
-         * hasMany gameActivities
+         * hasMany gameActions
          * hasMany achievements
          * hasMany rounds
       * Fields
@@ -69,7 +69,7 @@
    * Runs
       * Relationships
          * belongsTo Rounds
-         * hasMany runactivities
+         * hasMany runactions
       * Fields
          * id
          * round_id
@@ -92,11 +92,11 @@
          * scoreRun
          * confirmScore
 
-   * Activities
+   * Actions
       * Relationships
          * belongTo games
-         * hasMany run_activities
-         * hasMany game_activities
+         * hasMany run_actions
+         * hasMany game_actions
       * Fields
          * id
          * game_id
@@ -106,27 +106,27 @@
          * is_bonus
       * Methods
 
-   * GameActivities
+   * GameActions
       * Relationships
          * belongsTo games
-         * belongsTo activities
+         * belongsTo actions
       * Fields
          * id
          * game_id
-         * activity_id
+         * action_id
       * Methods
-         * addActivityToGame
-         * addGameToActivity
+         * addActionToGame
+         * addGameToAction
 
-   * RunActivities
+   * RunActions
       * Relationships
          * belongsto runs
          * belongsto acitivities
       * Fields
          * id
          * run_id
-         * activity_id
-         * parent_activity_id
+         * action_id
+         * parent_action_id
          * deleted
          * created
          * modified
