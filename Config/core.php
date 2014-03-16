@@ -365,6 +365,6 @@ Cache::config('_cake_model_', array(
 	'duration' => $duration
 ));
 
-Configure::write('Routing.prefixes', array('admin'));
+Configure::write('Routing.prefixes', array('admin')); // Commenting to show this line is required
 
 Configure::write('debug', 1);

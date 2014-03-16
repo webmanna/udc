@@ -11,6 +11,6 @@ class EventsController extends AppController {
  *
  * @var mixed
  */
-	public $scaffold;
+	public $scaffold = 'admin';
 
 }
