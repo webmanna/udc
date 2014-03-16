@@ -3,32 +3,38 @@
 
 
 *Development Roadmap*
-* ~~Database scaffolding~~
-* Placeholder data
-* Review 'event flow' revise db as needed
-* API Routing
-* Admin visual layer
-* Wordpress User Integration
-* Wordpress Shortcode visual layers
+   * API
+      * Database
+         * ~~Structure~~
+         * ~~Scaffolding~~
+         * Awards systen
+            * best way to code conditions ?
+               * log everything as an action
+               * observe action table, award searches based on action type
+            * based on action, round, career
+               * awarded per action
+               * awarded to handler, dog, team pair
+      * Admin Scaffolding
+         * remove event selector from game/add
+         * remove runs from actions/add
+         * remove award from handlers/add
+         * remove award from dogs/add
+      * REST Layer
+         * json routing
+         * serialized output
+      * Extend Controllers
+         * action input for runs
+         * award searches per action
+         * award searches per round
+      * Visual Layers
+         * Admin
+         * Public
+      * Authentication
+         * Admin Users
+         * WP/App Integration
 
-
-*Database Models / Progress*
-* ~~Tours~~
-* ~~Events~~
-* ~~Games~~
-* ~~Divisions~~
-* ~~Event Games~~
-* ~~Rounds~~
-* ~~Runs~~
-* ~~Actions~~
-* ~~GameActions~~
-* ~~RunActions~~
-* ~~Levels~~
-* ~~Awards~~
-* ~~Award Conditions~~
-* ~~Handlers~~
-* ~~AwardsAchievements~~
-* ~~Dogs~~
-* ~~AwardsDogs~~
-* ~~Team Pairs~~
-* ~~AwardsTeamPairs~~
+   * Wordpress
+      * API Framework
+      * Registration
+         * WP_user_id
+      * Shortcodes
