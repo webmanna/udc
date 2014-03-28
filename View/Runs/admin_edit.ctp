@@ -18,7 +18,7 @@
 		echo $this->Form->input('throws_faults');
 		echo $this->Form->input('time');
 		echo $this->Form->input('is_official');
-		// echo $this->Form->input('Action');
+		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
