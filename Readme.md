@@ -20,8 +20,8 @@
          * remove award from handlers/add
          * remove award from dogs/add
       * REST Layer
-         * json routing
-         * serialized output
+         * ~~json routing~~
+         * ~~serialized output~~
       * Extend Controllers
          * action input for runs
          * award searches per action
