@@ -43,6 +43,22 @@ class RunsController extends AppController {
                 $this->set('_serialize', array('run'));
 	}
 
+	public function admin_add() {
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->Run->save($this->request->data)) {
+				$this->Session->setFlash(__('The run has been saved.'));
+				$this->fireEvent('Controller.Run.AfterSave', $this->request->data);
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The run could not be saved. Please, try again.'));
+			}
+		}
+		$rounds	    = $this->Run->Round->find('list');
+		$teamPairs  = $this->Run->TeamPair->find('list');
+		$actions    = $this->Run->Action->find('list');
+		$this->set(compact('rounds', 'teamPairs', 'actions'));
+	}
+	
 /**
  * admin_edit method
  *
