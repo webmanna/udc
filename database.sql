@@ -10,11 +10,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping database structure for udcdb
-CREATE DATABASE IF NOT EXISTS `udcdb` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `udcdb`;
-
-
 -- Dumping structure for table udcdb.actions
 CREATE TABLE IF NOT EXISTS `actions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -132,7 +127,6 @@ CREATE TABLE IF NOT EXISTS `awards_team_pairs` (
 CREATE TABLE IF NOT EXISTS `award_conditions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `award_id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
   `test_model` varchar(50) NOT NULL,
   `test_conditions` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`),
