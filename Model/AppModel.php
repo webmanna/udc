@@ -30,4 +30,9 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+    public $useDbConfig = 'live';
+    function __construct() {
+	parent::__construct();
+	$this->useDbConfig = ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') ? 'local' : 'live' ;
+    }
 }
