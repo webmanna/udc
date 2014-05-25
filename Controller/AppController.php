@@ -23,4 +23,31 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	public $components = array('DebugKit.Toolbar', 'RequestHandler');
+	
+	public function __construct($request = null, $response = null) {
+	    parent::__construct($request, $response);
+	    $this->loadListeners($request, $response);
+	}
+
+	// dynamiclly load event listeners for the entire app to use
+	public function loadListeners($request, $response) {
+	    
+	    // get all PHP files in app/Event
+	    foreach(glob(APP."Event/*.php") as $eventFile) {			
+		
+		// get only the class name
+		$className = str_replace(".php", "", basename($eventFile));	
+		
+		// use the file
+		App::uses($className, 'Event'); 
+		
+		// then instantiate the file and attach it to the event manager
+		$this->getEventManager()->attach(new $className($request, $response));
+	    }
+	}
+
+	public function fireEvent($event,$data) {
+	    $event = new CakeEvent($event, $this, $data);
+	    $this->getEventManager()->dispatch($event);
+	}
 }
