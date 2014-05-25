@@ -1,4 +1,4 @@
----+ up your league
+---+ UDC
 
    * Tours
       * Relationships
@@ -163,7 +163,6 @@
       * Fields
          * id
          * achievement_id
-         * name
          * test_model
          * test_conditions
       * Methods
