@@ -22,7 +22,7 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components = array('DebugKit.Toolbar', 'RequestHandler');
+	public $components = array('DebugKit.Toolbar', 'RequestHandler', 'Session');
 	
 	public function __construct($request = null, $response = null) {
 	    parent::__construct($request, $response);
@@ -40,13 +40,16 @@ class AppController extends Controller {
 		
 		// use the file
 		App::uses($className, 'Event'); 
+		// CakeLog::write('AppController.loadListeners', 'App::uses - ' . $className);
 		
 		// then instantiate the file and attach it to the event manager
 		$this->getEventManager()->attach(new $className($request, $response));
+		// CakeLog::write('AppController.loadListeners', 'Event Attached - ' . $className);
 	    }
 	}
 
 	public function fireEvent($event,$data) {
+	    // CakeLog::write('AppController.fireEvent', 'Event Fired - Event:' . $event );
 	    $event = new CakeEvent($event, $this, $data);
 	    $this->getEventManager()->dispatch($event);
 	}
